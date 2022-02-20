@@ -1,0 +1,61 @@
+2022-02-20 10:37:32,771 DEBUG Printing Instructions
+2022-02-20 10:37:32,771 DEBUG 
+            1.Visit the link "https://archive.ics.uci.edu/ml/datasets/Carbon+Nanotubes"
+            2. Download the dataset
+            3.Insert bulk data(from csv into mongodb)
+            4.Different Mongo db operation
+            
+2022-02-20 10:37:32,771 INFO Printed Instructions
+2022-02-20 10:37:32,771 DEBUG Connecting to PyMongo client and fetching the db and collection carbon_nanotubes_col
+2022-02-20 10:37:40,884 INFO collection carbon_nanotubes_col fetched successfully
+2022-02-20 10:37:40,977 INFO data from csv ./Data/carbon_nanotubes.csv read successfully
+2022-02-20 10:37:40,977 DEBUG insert_bulk method
+2022-02-20 10:37:42,806 INFO Bulk insert successful
+2022-02-20 10:37:42,806 INFO 
+2022-02-20 10:37:42,806 DEBUG insert_one method
+2022-02-20 10:37:43,581 INFO <pymongo.results.InsertOneResult object at 0x00000280D6725880> inserted successfully
+2022-02-20 10:37:43,581 INFO 
+2022-02-20 10:37:43,581 DEBUG find_one method
+2022-02-20 10:37:43,628 DEBUG {'_id': ObjectId('6211cc9c8f213fad0129c928'), 'Chiral indice n': '2', 'Chiral indice m': '1', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
+2022-02-20 10:37:43,628 INFO one document fetched successfully
+2022-02-20 10:37:43,628 INFO 
+2022-02-20 10:37:43,629 DEBUG find_on_filter method
+2022-02-20 10:37:43,669 DEBUG {'_id': 1, 'Chiral indice n': '2', 'Chiral indice m': '1', 'Initial atomic coordinate u': '0,679007', 'Initial atomic coordinate v': '0,701378', 'Initial atomic coordinate w': '0,017037', "Calculated atomic coordinates u'": '0,721037', "Calculated atomic coordinates v'": '0,730237', "Calculated atomic coordinates w'": '0,017017'}
+2022-02-20 10:37:43,669 INFO documents filtered and fetched successfully using filter '_id': 1 
+2022-02-20 10:37:43,669 INFO 
+2022-02-20 10:37:43,670 DEBUG find_many method
+2022-02-20 10:37:43,712 DEBUG {'_id': ObjectId('6211cc9c8f213fad0129c928'), 'Chiral indice n': '2', 'Chiral indice m': '1', 'Initial atomic coordinate u': '0,679005', 'Initial atomic coordinate v': '0,701318', 'Initial atomic coordinate w': '0,017033', "Calculated atomic coordinates u'": '0,721039', "Calculated atomic coordinates v'": '0,730232', "Calculated atomic coordinates w'": '0,017014'}
+2022-02-20 10:37:43,712 DEBUG {'_id': ObjectId('6211cc9c8f213fad0129c929'), 'Chiral indice n': '2', 'Chiral indice m': '1', 'Initial atomic coordinate u': '0,717298', 'Initial atomic coordinate v': '0,642129', 'Initial atomic coordinate w': '0,231319', "Calculated atomic coordinates u'": '0,738414', "Calculated atomic coordinates v'": '0,65675', "Calculated atomic coordinates w'": '0,232369'}
+2022-02-20 10:37:43,712 DEBUG {'_id': ObjectId('6211cc9c8f213fad0129c92a'), 'Chiral indice n': '2', 'Chiral indice m': '1', 'Initial atomic coordinate u': '0,489336', 'Initial atomic coordinate v': '0,303751', 'Initial atomic coordinate w': '0,088462', "Calculated atomic coordinates u'": '0,477676', "Calculated atomic coordinates v'": '0,263221', "Calculated atomic coordinates w'": '0,088712'}
+2022-02-20 10:37:43,713 DEBUG {'_id': ObjectId('6211cc9c8f213fad0129c92b'), 'Chiral indice n': '2', 'Chiral indice m': '1', 'Initial atomic coordinate u': '0,413957', 'Initial atomic coordinate v': '0,632996', 'Initial atomic coordinate w': '0,040843', "Calculated atomic coordinates u'": '0,408823', "Calculated atomic coordinates v'": '0,657897', "Calculated atomic coordinates w'": '0,039796'}
+2022-02-20 10:37:43,713 DEBUG {'_id': ObjectId('6211cc9c8f213fad0129c92c'), 'Chiral indice n': '2', 'Chiral indice m': '1', 'Initial atomic coordinate u': '0,334292', 'Initial atomic coordinate v': '0,543401', 'Initial atomic coordinate w': '0,15989', "Calculated atomic coordinates u'": '0,303349', "Calculated atomic coordinates v'": '0,558807', "Calculated atomic coordinates w'": '0,157373'}
+2022-02-20 10:37:43,713 INFO Documents fetched successfully but limited to 5
+2022-02-20 10:37:43,714 INFO 
+2022-02-20 10:37:43,714 DEBUG find_on_query method
+2022-02-20 10:37:43,750 DEBUG {'_id': ObjectId('6211cc9c8f213fad0129c945'), 'Chiral indice n': '3', 'Chiral indice m': '1', 'Initial atomic coordinate u': '0,24301', 'Initial atomic coordinate v': '0,424391', 'Initial atomic coordinate w': '0,020628', "Calculated atomic coordinates u'": '0,222068', "Calculated atomic coordinates v'": '0,414703', "Calculated atomic coordinates w'": '0,020882'}
+2022-02-20 10:37:43,750 DEBUG {'_id': ObjectId('6211cc9c8f213fad0129c959'), 'Chiral indice n': '3', 'Chiral indice m': '1', 'Initial atomic coordinate u': '0,534031', 'Initial atomic coordinate v': '0,290165', 'Initial atomic coordinate w': '0,405243', "Calculated atomic coordinates u'": '0,543931', "Calculated atomic coordinates v'": '0,27459', "Calculated atomic coordinates w'": '0,405442'}
+2022-02-20 10:37:43,751 DEBUG {'_id': ObjectId('6211cc9c8f213fad0129c95a'), 'Chiral indice n': '3', 'Chiral indice m': '1', 'Initial atomic coordinate u': '0,24301', 'Initial atomic coordinate v': '0,424391', 'Initial atomic coordinate w': '0,353961', "Calculated atomic coordinates u'": '0,22811', "Calculated atomic coordinates v'": '0,42237', "Calculated atomic coordinates w'": '0,353687'}
+2022-02-20 10:37:43,751 DEBUG {'_id': ObjectId('6211cc9c8f213fad0129c96f'), 'Chiral indice n': '3', 'Chiral indice m': '1', 'Initial atomic coordinate u': '0,534031', 'Initial atomic coordinate v': '0,290165', 'Initial atomic coordinate w': '0,738577', "Calculated atomic coordinates u'": '0,532457', "Calculated atomic coordinates v'": '0,267534', "Calculated atomic coordinates w'": '0,738691'}
+2022-02-20 10:37:43,751 DEBUG {'_id': ObjectId('6211cc9c8f213fad0129c97e'), 'Chiral indice n': '3', 'Chiral indice m': '2', 'Initial atomic coordinate u': '0,713311', 'Initial atomic coordinate v': '0,778677', 'Initial atomic coordinate w': '0,296075', "Calculated atomic coordinates u'": '0,720745', "Calculated atomic coordinates v'": '0,794402', "Calculated atomic coordinates w'": '0,296029'}
+2022-02-20 10:37:43,751 INFO Documents fetched successfully using query :{'Initial atomic coordinate u': {'$regex': '1$'}}
+2022-02-20 10:37:43,751 INFO 
+2022-02-20 10:37:43,752 DEBUG update_one method
+2022-02-20 10:37:43,787 DEBUG <pymongo.results.UpdateResult object at 0x00000280D856D740>
+2022-02-20 10:37:43,788 INFO Document:1 updated successfully
+2022-02-20 10:37:43,788 INFO 
+2022-02-20 10:37:43,788 DEBUG update_many method
+2022-02-20 10:37:43,932 DEBUG 1788
+2022-02-20 10:37:43,933 INFO Documents:1788 updated successfully
+2022-02-20 10:37:43,933 INFO 
+2022-02-20 10:37:43,933 DEBUG delete_one method
+2022-02-20 10:37:43,970 DEBUG <pymongo.results.DeleteResult object at 0x00000280D856D740>
+2022-02-20 10:37:43,970 INFO Document:1 deleted successfully on condition {'_id': 1}
+2022-02-20 10:37:43,970 INFO 
+2022-02-20 10:37:43,970 DEBUG delete_many method
+2022-02-20 10:37:44,085 DEBUG 1787
+2022-02-20 10:37:44,086 INFO Documents:1787 deleted successfully
+2022-02-20 10:37:44,086 INFO 
+2022-02-20 10:37:44,086 DEBUG Dropping the mongo db collection
+2022-02-20 10:37:44,128 INFO Dropped the mongo db collection successfully
+2022-02-20 10:37:44,129 INFO 
+2022-02-20 10:37:44,136 INFO Thank you
